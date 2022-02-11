@@ -48,6 +48,11 @@ header li {
     margin: 5px;
 }
 
+#CONTENEDOR{
+    
+        background-image: linear-gradient(red, yellow);
+}
+
 /* # section
 =================================== */
 section {
@@ -70,6 +75,16 @@ section p {
 }
 section iframe {
     max-width: 100%;
+}
+.zoom {
+    transition: transform .4s; 
+    width: 400px;
+    height: 200px;
+    
+}
+ 
+.zoom:hover {
+    transform: scale(1.5); 
 }
 
 /* # footer

@@ -1,0 +1,107 @@
+/* # estilos generales
+=================================== */
+* {
+    font-family: 'Dongle', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    border: 1px solid linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
+    border-right-width: 0;
+}
+h1 {
+    color:rgb(216, 57, 17);
+}
+
+/* # header
+=================================== */
+header {
+    background: linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
+    border-bottom: 1px solid black;
+    position: fixed;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header .CONTENEDOR {
+    font: 12px "time new roman";
+    float: left;
+    background: linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
+    box-sizing: border-box;
+    width: 100%;
+
+    /* alineo los items */
+    align-items: center;     /* alineo vertical */
+    justify-content: center; /* alineo horizontal */
+
+    /* Activo el modo grid */
+    display: grid;
+
+    /* configuro la grid */
+    grid-template-columns: 200px auto; /* 2 columnas */
+    grid-template-rows: 50px; /* 1 columna */
+}
+header ul,
+header li {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* # section
+=================================== */
+section {
+    background: linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    
+    /* alineo los items */
+    align-items: center;     /* alineo vertical */
+    justify-content: center; /* alineo horizontal */
+}
+section img {
+    display: inline-block;
+    height: 200px;
+    max-width: 100%;
+}
+section p {
+    background:transparent;
+}
+section iframe {
+    max-width: 100%;
+}
+
+/* # footer
+=================================== */
+footer {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 150px;
+    
+    /* alineo los items */
+    align-items: center;     /* alineo vertical */
+    justify-content: center; /* alineo horizontal */
+}
+footer img {
+    width:30px;
+    height: 30px;
+}
+
+/* # Media querys
+=================================== */
+@media screen and (max-width: 450px) {
+    header .CONTENEDOR {
+        flex-direction: column;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 50px);
+    }
+    section {
+        margin-top: 100px;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 150px);
+    }
+}

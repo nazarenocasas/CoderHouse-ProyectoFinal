@@ -4,6 +4,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,32 +16,67 @@
     <title>🅻🅾🆂 🅱🆄🅴🅽🅾🆂 🅲🅾🅲🅷🅴🆂</title>
 </head>
 <body>
-    <header>
-        <div class="CONTENEDOR">
-            <h2><a href="index.html">🅻🅾🆂 🅱🆄🅴🅽🅾🆂 🅲🅾🅲🅷🅴🆂</a></h2>
-            <nav>
-                <ul>
-                    <li><a href="Coches.html">🅲🅾🅲🅷🅴🆂</a></li>
-                    <li><a href="Camionetas.html">🅲🅰🅼🅸🅾🅽🅴🆃🅰🆂</a></li>
-                    <li><a href="Motos.html">🅼🅾🆃🅾🆂</a></li>
-                    <li><a href="Camiones.html">🅲🅰🅼🅸🅾🅽🅴🆂</a></li>
-                </ul>
-            </nav>
+     <header>
+        <div class="bg-light">
+            <div class="container-xl">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                       <a class="navbar-brand" href="index.html">🅻🅾🆂 🅱🆄🅴🅽🅾🆂 🅲🅾🅲🅷🅴🆂</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Coches.html">Coches</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Camionetas.html">Camionetas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Motos.html">Motos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Camiones.html">Camiones</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>    
+            </div>
         </div>
     </header>
-    <section id="coches">
+    <main id="coches">
         <h1>PERO MIRÁ ESAS LINDURAS</h1>
-        <p>A Vos Te Amo </p>
-        <img class="zoom" src="img/coches/torino.jpg" alt="Renault Torino Coupe">
-        <p>La Felicidad De Mi Padre </p>
-        <img class="zoom" src="img/coches/peugeot 306.jpg" alt="Peugeot 306">
-        <p>La Segunda Felicidad De Mi Padre </p>
-        <img class="zoom" src="img/coches/honda civic.jpg" alt="Honda Civic 1993">
-        <p> Con Este Hay Amor/Odio </p>
-        <img class="zoom" src="img/coches/chevi.jpg" alt="la chevy papá">
-        <P>Por Acá Les Dejamos Un Videoski</P>
+        <h2><p>Renault Torino</p></h2>
+        <div class="card" style="width: 18rem;">
+            <img src="img/coches/torino.jpg" class="zoom" alt="Renault Torino Coupe">
+              <p class="card-text"> un coupé histórico, fabricado en Argentina
+                   Es bastante probable que, incluso, los fanáticos más acérrimos de la marca francesa probablemente nunca hayan oído hablar del Renault Torino. Si te decimos que este clásico fue conducido por personajes históricos como Leonid Brezhnev, Fidel Castro y Juan Manuel Fangio, puede que entiendas su categoría. Además, detrás de la historia del Renault Torino hubo mucha gente involucrada.
+
+                Para entender el origen del coche, tenemos que poner en marcha la máquina del tiempo y retroceder hasta 1955. En este año, la marca estadounidense Kaiser paralizó su producción de coches y se concentró en la fabricación del Jeep Willys. En 1963, la compañía fue rebautizada como 'Kaiser Jeep Corporation' y, a partir de 1970, AMC se hizo cargo del grupo.</p>
+        </div>
+        <h2><p>PEUGEOT 306 GTI</p></h2>
+        <div class="card" style="width: 18rem;">
+            <img src="img/coches/peugeot 306.jpg" class="zoom" alt="Peugeot 306">
+              <p class="card-text"> un coupé histórico, fabricado en Argentina
+                   Es bastante probable que, incluso, los fanáticos más acérrimos de la marca francesa probablemente nunca hayan oído hablar del Renault Torino. Si te decimos que este clásico fue conducido por personajes históricos como Leonid Brezhnev, Fidel Castro y Juan Manuel Fangio, puede que entiendas su categoría. Además, detrás de la historia del Renault Torino hubo mucha gente involucrada.
+
+                Para entender el origen del coche, tenemos que poner en marcha la máquina del tiempo y retroceder hasta 1955. En este año, la marca estadounidense Kaiser paralizó su producción de coches y se concentró en la fabricación del Jeep Willys. En 1963, la compañía fue rebautizada como 'Kaiser Jeep Corporation' y, a partir de 1970, AMC se hizo cargo del grupo.</p>
+        </div>
+        <h2><p>Honda Civic </p></h2>
+        <div class="card" style="width: 18rem;">
+            <img src="img/coches/honda civic.jpg" class="zoom" alt="Honda Civic 1993">
+              <p class="card-text">el 1993 Honda Civic 4-dr LX es un Sedan. Tiene 4 puertas y está propulsado por un motor que produce 90 hp y está emparejado con una caja de cambios .. el 1993 Honda Civic 4-dr LX tiene una capacidad de carga de litros y el vehículo pesa 980 kg. En términos de asistencia en la conducción, el 1993 Honda Civic 4-dr LX tiene control de estabilidad y control de tracción además del sistema de frenos antibloqueo (abs) </p>
+        </div>
+        <h2><p>Chevrolet Chevy</p></h2>
+        <div class="card" style="width: 18rem;">
+            <img src="img/coches/chevi.jpg" class="zoom" alt= "Chevrolet Chevy">
+              <p class="card-text">Es un automóvil de turismo construido por General Motors de Argentina para la marca Chevrolet, durante las décadas de 1960 y 1970. ... Fue el coche más popular entre los fanáticos de la marca, porque resultó ser el auto más ganador de la marca en su incursión en el Turismo Carretera.</p>
+        </div>
+        <h2><P>Por Acá Les Dejamos Un Videoski</P></h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/YFFWU2Q9Xdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+    </main>
     <footer>
         <h2>🅻🅾🆂 🅱🆄🅴🅽🅾🆂 🅲🅾🅲🅷🅴🆂</h2>
         <div>
@@ -46,5 +86,9 @@
         
         </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 </html>

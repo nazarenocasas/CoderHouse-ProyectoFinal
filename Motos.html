@@ -4,6 +4,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,33 +17,62 @@
 </head>
 <body>    
     <header>
-        <div class="CONTENEDOR">
-            <h2><a href="index.html">🅻🅾🆂 🅱🆄🅴🅽🅾🆂 🅲🅾🅲🅷🅴🆂</a></h2>
-            <nav>
-                <ul>
-                    <li><a href="Coches.html">🅲🅾🅲🅷🅴🆂</a></li>
-                    <li><a href="Camionetas.html">🅲🅰🅼🅸🅾🅽🅴🆃🅰🆂</a></li>
-                    <li><a href="Motos.html">🅼🅾🆃🅾🆂</a></li>
-                    <li><a href="Camiones.html">🅲🅰🅼🅸🅾🅽🅴🆂</a></li>
-                </ul>
-            </nav>
+        <div class="bg-light">
+            <div class="container-xl">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">🅻🅾🆂 🅱🆄🅴🅽🅾🆂 🅲🅾🅲🅷🅴🆂</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Coches.html">Coches</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Camionetas.html">Camionetas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Motos.html">Motos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Camiones.html">Camiones</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>    
+            </div>
         </div>
     </header>
-    <section id="motos">
+    <main id="motos">
         <h1>PERO MIRÁ ESAS LINDURAS</h1>
-        <p>La Buenarda</p>
-        <img class="zoom" src="img/motos/5XRGUJPQPZDLJCHL2ZK7TT5CBY.webp" alt="Colgando un titan">
-        <p>La Legendaria</p>
-        <img class="zoom" src="img/motos/D_NQ_NP_955468-MLA45769774829_042021-OO.jpg" alt="rummm">
-        <p>Ufff Pero Mira Lo Que Sos </p>
-        <img class="zoom" src="img/motos/ktm-duke-200.jpg" alt="dime como conduces y te dire quien eres :v">
-        <p>Todas Las Wachas </p>
-        <img class="zoom"src="img/motos/rouser-ns-200-fi.webp" alt="rouser 200 VIEJOOOO">
-        <p>Por Acá Les Dejamos Un Videillo</p>
+        <h2><p>Honda New CG Titan 150</p></h2>
+        <div class="card" style="width: 18rem;">
+            <img src="img/motos/5XRGUJPQPZDLJCHL2ZK7TT5CBY.webp" class="zoom" alt="Honda New CG Titan 150">
+            <p class="card-text">Su chasis, completamente nuevo, trae una base hecha de acero de alta tensión, que lo dejó 3,8 kg más liviano. Pero la pérdida de peso final no fue exactamente esta, ya que la moto ganó carenados y nuevo faro. La CG pasó de 117 kg a 115 kg en la nueva generación.</p>
+        </div>
+        <h2><p>KTM 690 Enduro</p></h2>
+        <div class="card" style="width: 18rem;">
+            <img src="img/motos/D_NQ_NP_955468-MLA45769774829_042021-OO.jpg" class="zoom" alt="KTM 690 Enduro">
+              <p class="card-text">es una trail con clara vocación al off-road cuyo potente motor monocilíndrico de casi 75 CV y su reducido peso hacen de ella la moto total. En 2021 recibe nuevas actualizaciones y homologación Euro5.</p>
+        </div>
+        <h2><p> KTM Duke 200</p></h2>
+        <div class="card" style="width: 18rem;">
+            <img src="img/motos/ktm-duke-200.jpg" class="zoom" alt=" KTM Duke 200">
+              <p class="card-text">Con esta moto Auteco ingresa a un reducido club de ensambladores de la marca austriaca en el mundo. La KTM Duke 200 es la moto con la que Auteco inica esta nueva etapa de alianza con KTM y sus motos "listas para la competencia" que no significa otra cosa que motos capaces de competir en pista desde que salen de la fábrica, ahora colombiana.</p>
+        </div>
+        <h2><p>Rouser NS200</p></h2>
+        <div class="card" style="width: 18rem;">
+            <img src="img/motos/rouser-ns-200-fi.webp" class="zoom" alt="Rouser NS200">
+              <p class="card-text">La Rouser NS200 lleva tu experiencia Rouser a otro nivel. Uno moto hecha para buscar aventura todos los días. Utilizando el primer motor de triple bujía y 4 válvulas con DTS-i del mundo, la Rouser NS200 está diseñada para sorprendernos con su tecnología y su apariencia agresiva.</p>
+        </div>
+        <h2><p>Por Acá Les Dejamos Un Videillo</p></h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/8A--3OIqrjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+    </main>
     <footer>
-        <h2>🅻🅾🆂 🅱🆄🅴🅽🅾🆂 🅲🅾🅲🅷🅴🆂</h2>
+        <h3>🅻🅾🆂 🅱🆄🅴🅽🅾🆂 🅲🅾🅲🅷🅴🆂</h3>
         <div>
             <p>Seguinos en nuestras redes sociales para mas placer </p>
             <a href="https://www.facebook.com/laaabii.dts.9"><img src="img/redes/facebook-logo.png" alt="Facebook"></a>
@@ -46,5 +80,9 @@
         
         </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 </html>

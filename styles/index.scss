@@ -1,0 +1,131 @@
+/* # estilos generales
+=================================== */
+  
+  body {
+    border: 1px solid linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
+    border-right-width: 0;
+    font-family: Verdana;
+  font-family: 'PT Sans';
+  }
+  
+  h1 {
+    color: rgb(216, 57, 17);
+  }
+  
+  /* # header
+  =================================== */
+  
+  header {
+    background: linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
+    border-bottom: 1px solid black;
+    position: fixed;
+    height: 72px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .bg-light {
+    --bs-bg-opacity:3;
+    background: linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
+  }
+  
+  header {
+    ul, li {
+      display: inline-block;
+      margin: 5px;
+    }
+  }
+  
+  /* # main
+  =================================== */
+  
+  main {
+    background: linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 71px;
+  
+    /* alineo los items */
+    align-items: center;
+  
+    /* alineo vertical */
+    justify-content: center;
+  
+    /* alineo horizontal */
+  
+    img {
+      display: inline-block;
+      height: 200px;
+      max-width: 100%;
+    }
+  
+    p {
+      background: transparent;
+    }
+  
+    iframe {
+      max-width: 100%;
+    }
+  }
+  
+  .zoom {
+    transition: transform .4s;
+    width: 300px;
+    height: 150px;
+  
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.3);
+  
+    p {
+      padding: 10px;
+    }
+  }
+  
+  /* # footer
+  =================================== */
+  
+  footer {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 150px;
+  
+    /* alineo los items */
+    align-items: center;
+  
+    /* alineo vertical */
+    justify-content: center;
+  
+    /* alineo horizontal */
+  
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  /* # Media querys
+  =================================== */
+  @media screen and (max-width: 450px) {
+    header .CONTENEDOR {
+      flex-direction: column;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(2, 50px);
+    }
+  
+    section {
+      margin-top: 100px;
+    }
+  
+    footer {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(2, 150px);
+    }
+  }

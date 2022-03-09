@@ -1,0 +1,3 @@
+puse las etiquetas <meta> en todas las paginas
+actualize el title en todas las paginas
+cambie el <h3> del footer por una etiqueta <a>

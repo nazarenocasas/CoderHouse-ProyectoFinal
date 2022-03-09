@@ -1,20 +1,5 @@
-/* # estilos generales
-=================================== */
-body {
-  border: 1px solid linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
-  border-right-width: 0;
-  font-family: Verdana;
-  font-family: 'PT Sans';
-}
-
-h1 {
-  color: #d83911;
-}
-
-/* # header
-  =================================== */
 header {
-  background: linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
+  background: linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
   border-bottom: 1px solid black;
   position: fixed;
   height: 72px;
@@ -23,124 +8,106 @@ header {
   right: 0;
   z-index: 1;
 }
-
-.bg-light {
-  --bs-bg-opacity:3;
-  background: linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
-}
-
-header ul, header li {
+header ul,
+header li {
   display: inline-block;
   margin: 5px;
+}
+@media screen and (max-width: 450px) {
+  header .CONTENEDOR {
+    flex-direction: column;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 50px);
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 150px;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  word-wrap: break-word;
+}
+footer img {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 450px) {
+  footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 150px);
+  }
+}
+
+/* # estilos generales
+=================================== */
+body {
+  border: 1px solid linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
+  border-right-width: 0;
+  font-family: Verdana;
+  font-family: "PT Sans";
+}
+
+h1 {
+  color: #d83911;
+}
+
+.bg-light {
+  --bs-bg-opacity: 3;
+  background: linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
 }
 
 /* # main
   =================================== */
 main {
-  background: linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background: linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 71px;
   /* alineo los items */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   /* alineo vertical */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   /* alineo horizontal */
 }
-
 main img {
   display: inline-block;
   height: 200px;
   max-width: 100%;
 }
-
 main p {
   background: transparent;
 }
-
 main iframe {
   max-width: 100%;
 }
 
-.zoom {
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
+.zoom, main img {
+  transition: transform 0.4s;
   width: 300px;
   height: 150px;
 }
-
-.zoom:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+.zoom:hover, main img:hover {
+  transform: scale(1.5);
 }
 
 .card {
   background: rgba(255, 255, 255, 0.3);
 }
-
 .card p {
   padding: 10px;
-}
-
-/* # footer
-  =================================== */
-footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 200px auto;
-      grid-template-columns: 200px auto;
-  -ms-grid-rows: 150px;
-      grid-template-rows: 150px;
-  /* alineo los items */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* alineo vertical */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* alineo horizontal */
-}
-
-footer img {
-  width: 30px;
-  height: 30px;
 }
 
 /* # Media querys
   =================================== */
 @media screen and (max-width: 450px) {
-  header .CONTENEDOR {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: (50px)[2];
-        grid-template-rows: repeat(2, 50px);
-  }
   section {
     margin-top: 100px;
   }
-  footer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: (150px)[2];
-        grid-template-rows: repeat(2, 150px);
-  }
 }
+
 /*# sourceMappingURL=index.css.map */

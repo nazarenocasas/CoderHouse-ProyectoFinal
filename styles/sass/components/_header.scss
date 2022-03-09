@@ -1,0 +1,24 @@
+header {
+	background: linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
+	border-bottom: 1px solid black;
+	position: fixed;
+	height: 72px;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+
+	ul,
+	li {
+		display: inline-block;
+		margin: 5px;
+	}
+
+	@media screen and (max-width: 450px) {
+		.CONTENEDOR {
+			flex-direction: column;
+			grid-template-columns: auto;
+			grid-template-rows: repeat(2, 50px);
+		}
+	}
+}

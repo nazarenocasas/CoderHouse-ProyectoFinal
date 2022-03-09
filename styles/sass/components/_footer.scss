@@ -1,0 +1,21 @@
+@import "../base/mixins";
+
+footer {
+	@include displaygrid(200px auto, 150px);
+
+	align-items: center;
+	justify-content: center;
+
+	a {
+		word-wrap: break-word;
+	}
+
+	img {
+		width: 30px;
+		height: 30px;
+	}
+
+	@media screen and (max-width: 450px) {
+		@include displaygrid(auto, repeat(2, 150px));
+	}
+}
